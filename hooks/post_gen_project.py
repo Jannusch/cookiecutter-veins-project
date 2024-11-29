@@ -74,7 +74,7 @@ subprocess.check_call(['git', 'subtree', 'add', '--prefix=simu5g', '--message', 
 {%- endif %}
 
 # Veins
-subprocess.check_call(['git', 'subtree', 'add', '--prefix=veins', '--message', 'Merge Veins 5.2', 'https://github.com/sommer/veins', 'veins-5.2'])
+subprocess.check_call(['git', 'subtree', 'add', '--prefix=veins', '--message', 'Merge Veins 5.3', 'https://github.com/sommer/veins', 'veins-5.3'])
 
 # Cookiecutter project
 subprocess.check_call(['git', 'add', '.'])
