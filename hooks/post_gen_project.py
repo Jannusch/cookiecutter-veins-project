@@ -31,7 +31,7 @@ subprocess.check_call(['git', 'commit', '--allow-empty', '--message', 'Initial c
 
 # INET
 {%- if cookiecutter.use_inet == "yes" %}
-subprocess.check_call(['git', 'subtree', 'add', '--prefix=inet', '--message', 'Merge INET 4.4.0', 'https://github.com/inet-framework/inet', 'v4.4.0'])
+subprocess.check_call(['git', 'subtree', 'add', '--prefix=inet', '--message', 'Merge INET 4.5.4', 'https://github.com/inet-framework/inet', 'v4.5.4'])
 #subprocess.check_call(['git', 'rm', 'inet/.gitmodules', 'inet/showcases', 'inet/tutorials'])
 #subprocess.check_call(['git', 'commit', '--message', 'inet: remove submodules (showcases and tutorials)'])
 #subprocess.check_call(['git', 'subtree', 'add', '--squash', '--prefix=inet/tutorials', '--message', 'Merge INET Tutorials 4.0.0', 'https://github.com/inet-framework/inet-tutorials', 'v4.0.0'])
@@ -54,7 +54,7 @@ subprocess.check_call(['git', 'subtree', 'add', '--prefix=veins_vlc', '--message
 
 # Plexe
 {%- if cookiecutter.use_plexe == "yes" %}
-subprocess.check_call(['git', 'subtree', 'add', '--prefix=plexe', '--message', 'Merge Plexe 3.0', 'https://github.com/michele-segata/plexe', 'plexe-3.0'])
+subprocess.check_call(['git', 'subtree', 'add', '--prefix=plexe', '--message', 'Merge Plexe 3.1.3', 'https://github.com/michele-segata/plexe', 'plexe-3.1.3'])
 {%- endif %}
 
 # SimuLTE
@@ -70,11 +70,11 @@ subprocess.check_call(['git', 'remote', 'remove', 'simulte_remote'])
 
 # Simu5G
 {%- if cookiecutter.use_simu5g == "yes" %}
-subprocess.check_call(['git', 'subtree', 'add', '--prefix=simu5g', '--message', 'Merge Simu5G Master', 'https://github.com/Unipisa/Simu5G.git', 'v1.2.1'])
+subprocess.check_call(['git', 'subtree', 'add', '--prefix=simu5g', '--message', 'Merge Simu5G 1.3.0', 'https://github.com/Unipisa/Simu5G.git', 'v1.3.0'])
 {%- endif %}
 
 # Veins
-subprocess.check_call(['git', 'subtree', 'add', '--prefix=veins', '--message', 'Merge Veins 5.2', 'https://github.com/sommer/veins', 'veins-5.2'])
+subprocess.check_call(['git', 'subtree', 'add', '--prefix=veins', '--message', 'Merge Veins 5.3', 'https://github.com/sommer/veins', 'veins-5.3'])
 
 # Cookiecutter project
 subprocess.check_call(['git', 'add', '.'])
